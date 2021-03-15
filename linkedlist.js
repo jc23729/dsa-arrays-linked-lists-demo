@@ -13,3 +13,15 @@
 // Can insert or delete items at any position
 // Can contain duplicates
 // Preserves order of items
+
+class Node {
+    constructor(val){
+        this.val = val;
+        this.next = null;
+    }
+}
+
+const firstPage = new Node('google.com')
+const secondPage = new Node('reddit.com')
+
+firstPage.next = secondPage;
