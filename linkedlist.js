@@ -100,3 +100,24 @@ history.head = firstPage;
 
     return false;
   }
+
+  class LinkedList {
+    constructor() {
+      this.head = null;
+      this.tail = null;
+    }
+    traverse() {
+      let currentNode = this.head;
+      while (currentNode) {
+        console.log(currentNode.val);
+        currentNode = currentNode.next;
+      }
+    }
+    find(val) {
+      let currentNode = this.head;
+      while (currentNode) {
+        if (currentNode.val === val) return true;
+        currentNode = currentNode.next;
+      }
+      return false;
+    }
