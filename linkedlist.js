@@ -48,3 +48,21 @@ class Node {
   //         new Node('reddit.com',
   //             new Node('amazon.com',
   //                 new Node('youtube.com'))));
+
+
+//   A Linked List is just a bunch of nodes linked sequentially.
+
+// The only attribute it must have is a reference to its first node, called the head.
+
+// Since the list starts empty, the head is initially null.
+
+class LinkedList {
+  constructor() {
+    this.head = null;
+  }
+}
+let insects = new LinkedList();
+
+const history = mewLinkedList();
+history.head = firstPage;
+
