@@ -82,3 +82,21 @@ history.head = firstPage;
       current = current.next;
     }
   }
+
+//   Searching
+// Like printing—but stop searching once we find what we’re looking for.
+
+// demo/linkedlist.js
+//   /** find(val): is val in list? */
+
+  find(val) {
+    let current = this.head;
+
+    while (current !== null) {
+      if (current.val === val) return true;
+
+      current = current.next;
+    }
+
+    return false;
+  }
