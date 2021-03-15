@@ -66,3 +66,19 @@ let insects = new LinkedList();
 const history = mewLinkedList();
 history.head = firstPage;
 
+// Traversing
+// Assumption: we’ve already built list, leaving the actual construction for later.
+
+// We’re just going to traverse the list and print it.
+
+// demo/linkedlist.js
+//   /** print(): traverse & console.log each item. */
+
+  print() {
+    let current = this.head;
+
+    while (current !== null) {
+      console.log(current.val);
+      current = current.next;
+    }
+  }
