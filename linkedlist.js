@@ -21,7 +21,30 @@ class Node {
     }
 }
 
-const firstPage = new Node('google.com')
-const secondPage = new Node('reddit.com')
+const firstPage = new Node('google.com');
+const secondPage = new Node('reddit.com');
+const thirdPage = new Node('amazon');
 
 firstPage.next = secondPage;
+secondPage.next = firstPage;
+
+
+class Node {
+    constructor(val, next = null) {
+      this.val = val;
+      this.next = next;
+    }
+  }
+  
+  class Node {
+    constructor(val, next = null) {
+      this.val = val;
+      this.next = next;
+    }
+  }
+  
+  // const firstPage =
+  //     new Node('google.com',
+  //         new Node('reddit.com',
+  //             new Node('amazon.com',
+  //                 new Node('youtube.com'))));
